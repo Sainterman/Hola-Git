@@ -1,13 +1,13 @@
 #include <iostream>
 #include "animal.h"
-
+using namespace std;
 
 perro trosky;
 
 gallina josefina;
 int main()
 {
-    animal anAr[21];
+    animal* anAr[10];
     for(int i=0;i<10;i++)
     {
         cout << "presione '1' para crear un perro"<<endl;
@@ -16,8 +16,8 @@ int main()
         cin>>opc;
         if (opc=='1')
             anAr[i]= new perro();
-        else if(opc='2')
-            anAr[22]= new gallina();
+        else if(opc=='2')
+            anAr[i]= new gallina();
         else
         {
             cout<<"escriba 1 o 2"<< endl;
@@ -26,7 +26,7 @@ int main()
         }
 
     }
-    for(int i=0; i<22;i++)
+    for(int i=0; i<10;i++)
     {
         anAr[i]->hable();
         gallina* pG = dynamic_cast<gallina*>(anAr[i]);
