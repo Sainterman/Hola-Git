@@ -1,5 +1,8 @@
 #include <iostream>
 #include "animal.h"
+
+#define VERSION 1.0
+
 using namespace std;
 
 perro trosky;
@@ -7,6 +10,13 @@ perro trosky;
 gallina josefina;
 int main()
 {
+    std::cout << "Hola Granja.\n"
+                 "Version: " << VERSION
+              << "\n"
+                 "Fecha:" << __DATE__
+              << "\n"
+              << "\n";
+
     animal* anAr[10];
     for(int i=0;i<10;i++)
     {
