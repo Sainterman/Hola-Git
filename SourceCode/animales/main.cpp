@@ -32,6 +32,9 @@ int main()
         gallina* pG = dynamic_cast<gallina*>(anAr[i]);
         if(pG)
             pG->pongahuevo();
+        perro* pP=dynamic_cast<perro*>(anAr[i]);
+        if (pP)
+            pP->hagaUnTruco();
     }
 
 

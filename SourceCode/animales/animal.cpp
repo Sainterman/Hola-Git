@@ -25,14 +25,14 @@ perro::perro()
 void perro::hable()
 {
     if (esta_vivo)
-        cout<< "woau"<<endl;
+        cout<< "woau woau woau"<<endl;
     else
         cout<<"rip"<<endl;
 }
 void perro:: hagaUnTruco()
 {
     if(esta_vivo)
-        cout <<"sentado"<<endl ;
+        cout <<"sentado en la luna"<<endl ;
     else
         cout <<"rip"<< endl;
 }
