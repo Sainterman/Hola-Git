@@ -20,7 +20,7 @@ class perro : public animal
 {
    public:
    string color;
-   perro();
+   perro()
    void hable();
    void hagaUnTruco();
 

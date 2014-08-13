@@ -20,7 +20,7 @@ void animal::muerase()
 
 perro::perro()
 {
-    nPatas=4;color="cafe";
+    nPatas=g;color="cafe";
 }
 void perro::hable()
 {
@@ -43,14 +43,14 @@ gallina::gallina()
 void gallina:: hable()
 {
     if(esta_vivo)
-        cout<<"clo-clo"<<endl;
+        cout<<clo-clo<<endl;
     else
         cout<<"rip"<<endl;
 }
 void gallina::pongahuevo()
 {
     if(esta_vivo)
-        cout<<"\\\\0//"<<endl;
+        cout<<"\\0//"<<endl;
     else
         cout<<"ESTA MUERTA"<<endl;
 }
